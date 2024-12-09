@@ -28,19 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btn_connection = new Button();
             lbl_teste = new Label();
+            myDataGridView = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)myDataGridView).BeginInit();
             SuspendLayout();
-            // 
-            // btn_connection
-            // 
-            btn_connection.Location = new Point(461, 317);
-            btn_connection.Name = "btn_connection";
-            btn_connection.Size = new Size(94, 29);
-            btn_connection.TabIndex = 0;
-            btn_connection.Text = "Conectar";
-            btn_connection.UseVisualStyleBackColor = true;
-            btn_connection.Click += btn_connection_Click;
             // 
             // lbl_teste
             // 
@@ -50,24 +41,33 @@
             lbl_teste.Size = new Size(0, 20);
             lbl_teste.TabIndex = 1;
             // 
+            // myDataGridView
+            // 
+            myDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            myDataGridView.Location = new Point(113, 77);
+            myDataGridView.Name = "myDataGridView";
+            myDataGridView.RowHeadersWidth = 51;
+            myDataGridView.Size = new Size(762, 188);
+            myDataGridView.TabIndex = 2;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(971, 502);
+            Controls.Add(myDataGridView);
             Controls.Add(lbl_teste);
-            Controls.Add(btn_connection);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             WindowState = FormWindowState.Maximized;
+            ((System.ComponentModel.ISupportInitialize)myDataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Button btn_connection;
         private Label lbl_teste;
+        private DataGridView myDataGridView;
     }
 }
